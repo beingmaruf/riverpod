@@ -14,17 +14,14 @@ import 'package:flutter_riverpodd/network_client.dart';
 
 // Provider, Controller ke UI er kache expose kore. UI theke amra provider ke access kore controller er method call korte pari. Provider er maddhome amra controller er state keo access korte pari.
 
-// Notifier
-// = normal controller
+// Notifier = normal controller
 
-// NotifierProvider
-// = normal controller কে UI তে use করার দরজা
+// NotifierProvider = normal controller কে UI তে use করার দরজা
 
-// AsyncNotifier
-// = API/async controller
 
-// AsyncNotifierProvider
-// = API/async controller কে UI তে use করার দরজা
+// AsyncNotifier = API/async controller
+
+// AsyncNotifierProvider = API/async controller কে UI তে use করার দরজা
 
 /// ------------------------------------------------------------
 /// COUNTER CONTROLLER + PROVIDER

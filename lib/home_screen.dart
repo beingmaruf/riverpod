@@ -40,22 +40,14 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   FilledButton(
                     onPressed: () {
-                      ref
-                          .read(
-                            counterProvider.notifier,
-                          )
-                          .decrement();
+                      ref.read(counterProvider.notifier).decrement();
                     },
                     child: const Text('-'),
                   ),
                   const SizedBox(width: 20),
                   FilledButton(
                     onPressed: () {
-                      ref
-                          .read(
-                            counterProvider.notifier,
-                          )
-                          .increment();
+                      ref.read(counterProvider.notifier).increment();
                     },
                     child: const Text('+'),
                   ),
@@ -79,11 +71,7 @@ class HomeScreen extends StatelessWidget {
                   return Switch(
                     value: isToggled,
                     onChanged: (bool value) {
-                      ref
-                          .read(
-                            toggleProvider.notifier,
-                          )
-                          .changeValue(value);
+                      ref.read(toggleProvider.notifier).changeValue(value);
                     },
                   );
                 },
